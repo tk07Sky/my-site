@@ -3,10 +3,9 @@
 
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
-require('dotenv').config()
 
 module.exports = {
-  siteName: 'Gridsome',
+  siteName: 'tk07Sky',
   plugins: [
     {
       use: '@gridsome/source-contentful',
@@ -15,10 +14,7 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
         host: 'cdn.contentful.com',
         environment: 'master',
-        typeName: 'Contentful',
-        routes: {
-          'BlogPosts': '/posts/:id'
-        }
+        typeName: 'Contentful'
       }
     }
   ]

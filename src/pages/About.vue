@@ -7,8 +7,10 @@
 
 <script>
 export default {
-  metaInfo: {
-    title: 'About us'
+  metaInfo() {
+    return {
+      title: 'About us'
+    }
   }
 }
 </script>

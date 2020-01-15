@@ -20,8 +20,10 @@
 
 <script>
 export default {
-  metaInfo: {
-    title: 'Hello, world!'
+  metaInfo() {
+    return {
+      title: 'Hello, world!'
+    }
   }
 }
 </script>
